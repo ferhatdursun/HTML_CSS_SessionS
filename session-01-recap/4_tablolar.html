@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLOLAR</title>
+</head>
+
+<body>
+    <h1>TABLOLAR</h1>
+    <table border="4">
+        <!--Border ile satirlari bir tablo icerisine aliyoruz.-->
+        <caption style="caption-side: bottom;">Tablo-1: Kisiler</caption>
+        <!--Tabloya baslik vermek icin <caption> kullaniliyor. Tablo basligini tablonun üstüne almak icin sadece <caption>Tablo-1: Kisiler<caption> yazmamiz yeterli.-->
+        <tr>
+            <th><strong>Name</strong></th>
+            <th><strong>Sirname</strong> </th>
+            <th><strong>Age</strong> </th>
+        </tr>
+        <tr>
+            <td>Ashley</td>
+            <td>Miller</td>
+            <td>42</td>
+        </tr>
+        <tr>
+
+            <td>Osman</td>
+            <td>Gel</td>
+            <td rowspan="2">32</td>
+            <!--rowspan icerisine yazildigi hücre ve onun bir altinda ki sütun hücresini birlestiriyor. Bu örnek icin; Osman ve Enes'in yaslari ayni olmus oldu.-->
+        </tr>
+        <tr>
+            <td>Enes</td>
+            <td>Koc</td>
+            <!--<td>23</td>-->
+        </tr>
+        <tr>
+            <td colspan="3">Sacit Git 44</td>
+            <!--colspan icerisine yazildigi hücreden baslayarak verilen degere bagli olarak saginda ki satir hücresiyle birlesiyor. --->
+            <!--<td>Git</td>
+            <td>44</td>-->
+        </tr>
+
+
+
+
+
+
+
+    </table>
+
+</body>
+
+</html>

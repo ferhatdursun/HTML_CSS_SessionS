@@ -1,0 +1,15 @@
+.bg {
+    height: 70vh;
+    background-size: cover; /* Her resimden birer tane al.*/
+    background-position: center center;
+    background-attachment: fixed; /* Resmi sabitliyor ve yazilar resmin üstünden akiyor. */
+}
+
+.image1 {
+    background-image: url(../img/kleopatra-asisi.jpeg);
+       
+}
+
+.image2 {
+    background-image: url(../img/angelina.jpeg);
+}

@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: $arkaRengi;
+
+
+    .brand {
+
+        img {
+            width: 80px;
+            border: $borderRengi;
+            border-radius: 30%;
+            margin: 10px;
+        }
+    }
+}
+

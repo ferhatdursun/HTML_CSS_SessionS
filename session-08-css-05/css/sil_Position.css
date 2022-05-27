@@ -1,0 +1,101 @@
+* {
+    /* margin:0; 
+    Eger en bastan marginleri sifir yazarsak, bütün butonlar position:absolute; 
+    gibi olacaklar.
+    */
+}
+
+.box {
+    width: 20vw;
+    /* Bu sekilde (vw) ekranin 20% ini kapliyor. */
+    height: 20vw;
+}
+
+.box1 {
+    background-color: aquamarine;
+    position: relative;
+    /* position komutunun esas kullanim amaci kutularin bir birini etlimemesini saglamak.*/
+    /* position:relative; komutu ve sonrasinda verilen sag, sol, asagi, yukari 
+    komutlariyla kutu bulundugu yerden digerlerini etkilemeden hareket eder.
+    Sonrasinda verilen her komutta o an bulundugu yere göre konumunu degistirir.*/
+
+    left: 2rem;
+    /* Bulundugu yerde sol tarafina 2rem bosluk birakiyor. 
+    Ama digerlerini kimildatmiyor. */
+
+    top: 7rem;
+    /* bulundugu yerden hareket ederek digerlerinin üstüne de cikiyor. */
+
+    z-index: 1;
+    /* z-index; ile verilen rakamlardan hangisi daha büyükse üst üste olanlardan rakami en büyük olan en üstte görünür. */
+}
+
+.box2 {
+    background-color: blueviolet;
+    position: absolute;
+    /* position:absolute; bu komut verildiginde kutucuk nerede olursa olsun(isterse sayfanin en altinda) browser da margin degeri
+    yokmus gibi default olarak verilen komuta göre (Eger sonrasinda verilen komut left ise soldan, right ise sag köseden
+    konum alir ve verilen right degerini uygular. top ve bottomda birlikte verilirse, sag alt-üst, sol alt-üst köselerden konum alir.)
+    Yani verilen sag, sol, asagi, yukari komutlari sol üst köse baz alinarak yerine getirilir. */
+
+    left: 2rem;
+    top: 5rem;
+    /* Verilen left, top box1 ile ayni olmasina ragmen box1 e göre cok az yukarida.
+    Cünkü position;absolute marginleri bu kutu icin 0 yapiyor.*/
+    z-index: 2;
+    /* z-index; ile verilen rakamlardan hangisi daha büyükse üst üste olanlardan rakami en büyük olan en üstte görünür. */
+}
+
+.box3 {
+    background-color: yellow;
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+    text-align: right;
+    z-index: 0;
+    /* z-index; ile verilen rakamlardan hangisi daha büyükse üst üste olanlardan rakami en büyük olan en üstte görünür. */
+}
+
+.box4 {
+    background-color: coral;
+    /* box4 absolute-parent'in cocugu oldugu icin buna absolut veya relativ bile verilse eger babasi absolute ise, 
+    babasinin alanina göre(sol üst kösesini) konum alir ve disina cikamaz.*/
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+}
+
+.absolute-parent {
+    border: 2px solid black;
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    /* Burada position:absolute den dolayi icerisinde ki cocugu olan box4'ü de ayni yere götürür. */
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.box5 {
+    position: fixed;
+    /* Kutucugu istedigimiz yere bununla sabitleye biliriz.
+    Sonrasinda left,right, top, bottom ile de degisiklikler yapip o konum da sabit kalmasini saglaya biliriz. */
+    right: 1rem;
+    top: 1rem;
+    background-color: cyan;
+
+}
+
+.box6 {
+    background-color: pink;
+    position: sticky;
+    /* Sticky de yer belirtmek zorundayim. Mesela top:1rem; yazarsam, sayfayi asagiya dogru 
+    cekerken bu kutucugun top ile olan boslugu 1rem oldugunda daha fazla kimildamiyor. */
+
+    top: 1rem;
+
+    /* sticky'nin yerini degistirmek istersek margin verebiliriz. */
+    margin: 1rem auto;
+    /* -1rem de verilebilir. */
+
+}

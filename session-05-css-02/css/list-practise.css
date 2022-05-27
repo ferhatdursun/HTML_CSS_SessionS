@@ -1,0 +1,46 @@
+* {
+    font-family: "Roboto";
+    color: whitesmoke;
+}
+
+/*! nav.menu--> ayni kisiye ait olanlari yaziyorsam birlesik yazmam gerekiyor.*/
+nav.menu li {
+    background-color: gray;
+    text-align: center;
+}
+
+.menu .list .aktif:hover {
+    /*! üst tarafta ki hover; sayfada maus ile burada tanimlanan yerin üstüne gelince o kelimenin/ bölümün rengini degistiriyor.*/
+    /*! menu classinin altinda ki list classinin altinda ki aktif classi. Bu sekilde ic ice yazimlara PSEUDO class deniyor.  */
+    background-color: pink;
+}
+
+.menu .list {
+    list-style-position: inside;
+    list-style-type: "🇹🇷";
+    /*! Bu sekilde her list'in basina istedigimiz bir emojiyi ekleyebiliriz. */
+}
+
+
+/*! Burada(alt tarafta) sadece a{} yazabilirdik. Ama body'nin icersinde ki tüm a'lar icin gecerli olmus olurdu. */
+.menu .list a {
+    text-decoration: none;
+    /*! a tag'inin icerisinde ki kelimelerin altinda ki cizgiler iptal. */
+
+    font-weight: bold;
+    /* Yazilari kalinlastirmak icin*/
+    font-size: 25px;
+    /* Yazi boyutunu ayarlamak icin. */
+}
+
+nav.menu li:hover {
+    /*! maus ile <li> nin icersinde yazanlarin üstüne gelince yazinin rengi kirmiziya dönüsüyor. HOME'nin renginin kirmiziya dönüsmemesinin nedeni ona yukarida nokta atis class verildigi icin. Pembe kalmaya devam ediyor.*/
+    background-color: red;
+    color: yellow
+        /*! Burada color yellow denilmesine ragmen maus ile üstüne gelindiginde rengi yellow olmuyor. Cünkü yazilar <a> nin icerisinde burada ki class <li> icin.*/
+}
+
+a:hover {
+    color: yellow;
+    /*! maus ile yazilarin üstüne gelindiginde bu sekilde rengi yesile dönüsür. */
+}

@@ -1,0 +1,125 @@
+@charset "UTF-8";
+.navbar ul {
+  list-style-type: none;
+  display: flex; }
+  .navbar ul li a {
+    text-decoration: none;
+    padding: 5px;
+    color: black; }
+
+.slider {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #cc6699; }
+  .slider img {
+    width: 30%; }
+  .slider .left {
+    margin: 20px; }
+    .slider .left button {
+      border: none;
+      padding: 10px;
+      border-radius: 15px;
+      margin: 10px;
+      background-color: blueviolet; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(28, 150, 190, 0.5); }
+  .nav .brand img {
+    width: 80px;
+    border: 2px solid #af111d;
+    border-radius: 30%;
+    margin: 10px; }
+
+/* import ile style.scss icerisinde olan bazi kodlari(suanda _variables.scss ve _navbar.scss, _slider icerisinde) cagiriyoruz._*/
+/*********Degiskenleri tanimladik************/
+.container {
+  margin: 0 auto;
+  width: 80%;
+  background-color: burlywood; }
+
+.article .articles {
+  display: flex; }
+  .article .articles .article1, .article .articles .article2 {
+    width: 50%;
+    height: 200px;
+    background-color: gray;
+    border: 2px solid #af111d;
+    border-radius: 10px;
+    padding: 10px; }
+  .article .articles .article2 {
+    /* extend komutuyla yukarida tanimlanan .article1'in komutlarini direk olarak burada kullandik
+    ve isterse bu özelliklerden bazilarini burada tekrar yazarak degistirebiliriz.*/
+    background-color: gold; }
+
+.content .cards {
+  display: flex; }
+  .content .cards .card1 {
+    background-color: #ca11a2;
+    color: black;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid #af111d;
+    border-radius: 10px;
+    padding: 10px; }
+  .content .cards .card2 {
+    background-color: #ca11a2;
+    color: white;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid #af111d;
+    border-radius: 10px;
+    padding: 10px; }
+  .content .cards .card3 {
+    background-color: #ca11a2;
+    color: cadetblue;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid #af111d;
+    border-radius: 10px;
+    padding: 10px; }
+  .content .cards .card4 {
+    background-color: #ca11a2;
+    color: #247482;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid #af111d;
+    border-radius: 10px;
+    padding: 10px; }
+
+.footer {
+  background-color: pink; }
+
+.container.pink {
+  background-color: #be6f6f; }
+
+.container.red {
+  background-color: #ff0505; }
+
+.container.orange {
+  background-color: #de6b0d; }
+
+.social11 {
+  background-color: #004356; }
+
+.social12 {
+  background-color: #990000; }
+
+.social13 {
+  background-color: #005500; }
+
+.social14 {
+  background-color: #456789; }
+
+.social15 {
+  background-color: #121456; }
+
+.social16 {
+  background-color: #145e13; }
+
+/*# sourceMappingURL=style.css.map */

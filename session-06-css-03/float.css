@@ -1,0 +1,34 @@
+img {
+    width: 30%;
+    float: left;
+}
+
+.box {
+    float: left;
+    height: 2rem; /* boxlari asagiya dogru uzatiyor.*/
+}
+
+.box1 {
+    background-color: purple;
+    width: 20%;
+    margin-left: 3% ;
+}
+
+.box2 {
+    background-color: cornflowerblue;
+    width: 20%;
+}
+
+.box3 {
+    background-color: coral;
+    width: 20%;
+}
+
+.clearfix {
+    clear: left;
+    /* yukarida tanimlanan sola yaslamayi kir demek.*/
+}
+
+p{
+    margin-left: 3%;
+}

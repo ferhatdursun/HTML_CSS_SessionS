@@ -1,0 +1,97 @@
+.liste tr:nth-child(odd) {
+    /* liste classinin altinda ki tr lerin 1 li elemanlari*/
+    background-color: pink;
+    color: yellow;
+}
+
+.liste tr td:first-child {
+    font-weight: 900;
+    color: violet;
+}
+
+.liste td:last-child {
+    /* liste classinin altinda ki td lerin last cocuklarini etkiliyor. */
+    font-size: x-large;
+}
+
+.liste tr:nth-child(3) {
+    background-color: red;
+}
+
+.liste tr:nth-child(3)::after,
+.liste tr:nth-child(3)::before {
+
+    content: "🎗️";
+    /* Pseudo olarak icon eklemek istersek content: kullanilmasi gerekiyor. */
+}
+
+
+.liste tr::after,
+.liste tr::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "💛";
+    color: orange;
+}
+
+
+.liste td:nth-child() {
+    background-color: blue;
+}
+
+
+.liste td:nth-child(4){
+    color: blueviolet;
+}
+
+
+
+.button_underline {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.button_underline:hover {
+    background-color: greenyellow;
+    color: white;
+}
+
+
+.youtube:visited {
+    /* Henüz ziyaret edilmemis siteyi ziyaret ettikten sonra istedigimiz renkte gösterir. */
+    color: orange;
+}
+
+
+.youtube:active {
+    color: aqua;
+    /* Maus ile butonun üzerine tiklayip birakmazsak butonun bu rengi alir.*/
+}
+
+
+.button1:hover {
+    background-color: greenyellow;
+    color: white;
+    font-size: larger;
+    /* Butonun üstüne gelindiginde butonun boyutunu büyütüyor. */
+}
+
+
+td:hover {
+    background-color: greenyellow;
+    color: white;
+}
+
+
+th:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+
+/* div {
+  background-color: green;
+  opacity: 0.3;
+}
+rengin tonunu ayarlamak icin
+*/

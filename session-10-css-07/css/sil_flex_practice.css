@@ -1,0 +1,99 @@
+@import "variable.css";
+/* import komutuyla; importun icerisinde daha önceden tanimlanmis olan variablelari cagiriyoruz. */
+
+
+body {
+    margin: 0;
+    font-weight: 600;
+    box-sizing: border-box;
+    /* box-sizing komutundan dolayi, border da versem padding 
+    de versem kutuya sig demis oluyorum.*/
+
+}
+
+nav {
+    display: flex;
+    /* flex ile nav icinde ki divlerin yan yana gelmelerine izin veriyoruz. */
+    align-items: center;
+    /* align-items:center; divleri ortyaliyor dikeyde,
+    burada direk flex-grow ve flex-basis kullanmadan 
+    justify-self:center ile de yatay da ortalayabiliridik. */
+
+
+}
+
+nav .left {
+    background-color: var(--gri-8);
+    box-shadow: var(--acik-gölge);
+    border: 1px solid black;
+
+}
+
+
+nav .left img {
+    width: 40px;
+    height: 40px;
+
+}
+
+nav .mittel {
+
+    background-color: var(--mavi-10);
+    box-shadow: var(--koyu-gölge);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+nav .left,
+nav .mittel,
+nav .right {
+
+    flex-grow: 1;
+    /* Bu iki komut birlikte kullanildigi zaman elemanlarin ayni anda ayni miktarda büyümelerine sebep oluyor. */
+    flex-basis: 0;
+
+
+}
+
+
+
+nav .mittel .item {
+    display: inline-block;
+    /* Yan yana olduklari zaman padding almiyorlar, bunun icin display:inline-block diyoruz. */
+    padding: 16px;
+    text-decoration: none;
+    color: black;
+
+    transition: background-color 10s, color 5s;
+    /* nav .mittel .item:hover oldugunda ki background ve color degisikliklerini burada ki transition da yazan süreler icerisinde yap. */
+
+}
+
+nav .mittel .item:hover {
+
+    background-color: var(--mavi-6);
+    color: white;
+    border-radius: 10px;
+
+}
+
+nav .right {
+
+    background-color: var(--mavi-7);
+    box-shadow: var(--acik-gölge);
+    font-size: 40px;
+    border: 1px solid black;
+    text-align: right;
+
+}
+
+nav .right i {
+    color: black;
+}
+
+
+nav .right i:hover {
+    font-size: 60px;
+}

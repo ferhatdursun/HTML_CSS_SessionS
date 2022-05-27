@@ -1,0 +1,52 @@
+.yatay-menu ul {
+    list-style-type: none;
+    /* anasayfa, menunun basinda ki noktalari kaldirmak icin. */
+}
+
+.yatay-menu ul li {
+    background-color: bisque;
+    /* yatay- menu altinda ki li lere arka plan rengi vermek*/
+    text-align: center;
+    /* yatay menu icindeki yazilari center yapma. */
+    display: inline-block;
+    width: 8rem;
+    height: 5rem;
+    margin: 0.5rem;
+}
+
+a {
+    padding: 1rem;
+    background-color: red;
+    text-decoration: none;
+    display: inline-block;
+    width: 6rem;
+}
+
+/* active kullanmak istiyorsak ya hover dan sonra yazacagiz oder spesific selector (babasinin adini yazmak) yapmak zorundayiz.*/
+
+a:hover {
+    background-color: coral;
+    color: white;
+}
+
+a:active {
+    color: red
+        /* active; maus'a basili tutuldugunda butonun rengi kirmiziya dönmesi icin.*/
+}
+
+/* Acilir Menü */
+
+.acilir-menu ul {
+    /* acilir menu altinda ki ul leri kapat gösterme mit display:none */
+    display: none;
+}
+
+.acilir-menu:hover ul {
+    /* display:block ile acilir menuyu kapat ve sonra sonrasinda menu:hover ile menunün üstüne geldiginde ac, ul ile de ul olanlari göster*/
+    display: block;
+}
+
+nav{
+    width: 200px;
+
+}

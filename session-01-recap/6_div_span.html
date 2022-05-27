@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV-SPAN</title>
+    <!-- en dista ki div'e boyut ayari verirsem bu hepsini etkiler, cünkü hepsi bunun icerinde bulunuyor. -->
+    <style>
+        .en_dis {
+            border: 5px solid purple;
+            width: 50%;
+        }
+
+        .div1 {
+            border: 2px solid red;
+        }
+
+        .div2 {
+            border: 2px solid blue
+        }
+    </style>
+</head>
+
+<body>
+    <div class="en_dis">
+        <!-- <div> leri cantanin icerisinde ki ayri gruplar halinde paketlenmis kücük cantalar veya posetler gibi düsün.-->
+        <div class="div1">
+            <img src="./assets/favicion.png" alt="google.com" width="35%">
+            <!-- img resim eklemek icin kullanilan komut.-->
+            <!--Yatayda uzunluk, enine uzunluk width.-->
+            <!-- Resimleri alt alta göstermek icin aralarina bir <br> yazmamiz gerekiyor.-->
+            <img src="https://i.pinimg.com/236x/d5/92/40/d59240fa850eb8fc13267631f0dab716.jpg" alt="resim_2"
+                width="25%">
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="div2">
+            <img src="https://cdn.pixabay.com/photo/2022/01/22/16/54/book-6957870__480.jpg" alt="Kitap" width="35%">
+            <!--Disaridan eklenen resimler icin direkt olarak linki kopyala yapistir.-->
+            <!-- <div> disina yazilanlar bir alt satiradan itibaren yazdirilmaya baslar.-->
+        </div>
+        <p>merhaba</p>
+    </div>
+</body>
+
+</html>

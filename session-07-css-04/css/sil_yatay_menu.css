@@ -1,0 +1,53 @@
+.yatay_menu ul {
+    list-style-type: none;
+}
+
+a {
+    /* <a> larin icerisine yazilan link kisa yollarinin altinda ki cizgilerden kurtulmak icin.*/
+    text-decoration: none;
+    background-color: red;
+    padding: 1rem;
+    display: inline-block;
+    width: 6rem;
+    /* width ile Ana Sayfanin rengi ile icinde oldugu li'nin renginin boyutunu esitledik.*/
+}
+
+li a:active {
+    /* Maus ile tiklanildiginda arkla plan mor, yazi rengi ise beyaz olsun. */
+    background-color: blueviolet;
+    color: white;
+}
+
+a:hover {
+    /* Maus ile üstüne gelindiginde arka plan rengi siyah, yazi rengi kirmizi olsun. */
+    background-color: black;
+    color: red;
+}
+
+.yatay_menu ul li {
+
+    background-color: #ffe4c4;
+    text-align: center;
+    display: inline-block;
+    /*Bu kod sayesinde hem yan yana gelebiliyorlar (yan yanaligi bozulmuyor) hem de kendi margin ve padding degerlerini koruyorlar.*/
+
+    width: 8rem;
+    height: 5rem;
+    margin: 0.5rem;
+}
+
+.acilir_menu ul {
+    /* acilir menü classinin altinda ki <ul> ler icin*/
+    display: none;
+
+}
+
+.acilir_menu:hover ul {
+    /* Acili_menu clasinin üstüne geldiginde <ul> leri ac. */
+    display: block
+}
+
+/* Sadece üstüne tikaldigimiz zaman menünün altinda ki secenekler görünecekler.
+    .acilir_menu:active{
+    display: block;
+}*/

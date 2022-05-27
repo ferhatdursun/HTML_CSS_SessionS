@@ -1,0 +1,15 @@
+* {
+    color: yellowgreen;
+}
+p {
+    color: blue;
+}
+
+.par {
+    color: aqua;
+}
+
+.center .par {
+    text-align: center;
+    color: blueviolet;
+}

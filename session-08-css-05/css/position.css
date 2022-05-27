@@ -1,0 +1,69 @@
+.box {
+    width: 20vw;
+    /*! bu da altda ki de ekranin 20% i demek.*/
+    height: 20vh;
+}
+
+.box1 {
+    background-color: aquamarine;
+    position: relative;
+    /*! bu komut ile kutu sabit kaldi ve alt tarafta verecegimiz left, top komutlariyla bu kutu digerleri yerini degistirmeden hareket ettirilebiliniyor.*/
+    left: 2rem;
+    top: 3rem;
+    z-index: 14;
+}
+
+.box2 {
+    background-color: blueviolet;
+    position: absolute;
+    /*! position: absolute; Kutunun browser üzerinde nerede oldugunun önemei olmadan sol üst kösedeymis gibi konumlanip ona göre verilen ayarlari uyguluyor. Ve absolut dedigimiz zaman marginler yok sayiliyor.*/
+    left: 2rem;
+    top: 3rem;
+    z-index: 16;
+    /* hangisinin z-index degeri büyükse o renk üstte görünür.*/
+}
+
+.box3 {
+    background-color: yellow;
+    position: relative;
+    left: 2rem;
+    top: 3rem;
+    z-index: 11;
+}
+
+.dort {
+    background-color: coral;
+    position: absolute;
+    /* Burada ki komut ile absolute'nin cocugu olan dort sadece absolute'nin icerisinde kimildaya bilir.*/
+    top: 1rem;
+    left: 1rem;
+}
+
+.absolute-parent {
+    border: 5px solid blue;
+    width: 25vw;
+    height: 25vh;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    /* Burada position komutundan sonra sadece right komutu verilirse oldugu yerde sag köseye yapisir.*/
+    /* top, right verilmezse sayfanin üst kösesinden konum alir.*/
+}
+
+.box4 {
+    position: fixed;
+    /*! box'u istedigimiz bir yere sabitliyor.*/
+    background-color: darkcyan;
+    /*! yer belirtmek zorunda degilim. absolute gibi marginsiz noktalara göre konum alir.*/
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.box5 {
+    background-color: pink;
+    position: sticky;
+    /*! sticky ile baslangic konumu belirnemiyor. */
+    top: 0;
+    /*! sticky'nin yerini degistirmek istersek margin verebiliriz.*/
+    margin: 1rem auto;
+}

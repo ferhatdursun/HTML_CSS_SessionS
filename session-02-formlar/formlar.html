@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMLAR</title>
+</head>
+
+<body>
+    <h1>FORMLAR</h1>
+    <form action="result.html">
+        <!-- Asagida ki submit butonunun calismasi icin bizim bu bilgileri bir yerde depolamamiz lazim. Bunun icin de form etiketi var. form action=" " icine kayit edilecek yeri gösteriyoruz. -->
+
+        <div>
+            <label for="isim">AD:</label><!-- Label ile yazilar, input ile kutucuklar olusturuluyor.--->
+            <br>
+            <input type="text" id="isim" name="IsIm" value="" placeholder="Lütfen isim giriniz!" required>
+            <!-- name de ki ismin for ile alakasi yok. AD: bosluguna girilen girdinin baslik olarak Backend de nasil görünecegi ile alakali.
+            Yani backend de IsIm: Ferhat olarak görünecek. Ferhat girdisinin de IsIm'in karisinda görünmesi icin input'un icersinde nameden sonra bir value="" yazmamiz gerekiyor.-->
+            <!-- label ile input'u iliskilendirmek icin label'in for'u ile input'un id'si ayni olmak zorunda.-->
+            <br>
+            <br>
+            <label for="soyisim">SOYAD:</label>
+            <br>
+            <input type="text" id="soyisim" placeholder="Lütfen soyisim giriniz!" required>
+            <!-- Placeholder; input(AD, SOYAD,SIFRE) kutucuklarinin icerisinde sifre vb gibi bilgiler girilmeden önce hafif silik olarak bulunan yazilari olusturmak icin kullaniliyor. -->
+            <!-- required; form sayfasinda doldurulmasi zorunlu olanlar olusturmak icin kullaniliyor. Bu alanlar doldurulmadan form gönderilemez.-->
+            <br>
+        </div>
+        <br>
+        <div>
+            <label for="sifre">SIFRE</label>
+            <br>
+            <input type="password" id="sifre" name="password" value="" minlength="4" maxlength="8"
+                placeholder="Lütfen bir sifre belirleyiniz!">
+            <!-- Backend'in önüne gidecek olan bilgilerin basligi name'in icerisine yazdigimiz password: ve value="" value'ye girilen sifre.-->
+            <!--minlengt min girilmesi gerekn karater, max ise max girilmesi gerek karakter sayisi.-->
+        </div>
+        <br>
+        <br>
+        <div>
+            <label>CINSIYET</label>
+            <!-- Eger Backend de Cinsiyet: Kadin olarak görmeye gerek yoksa label da for ve input da id girmeye gerek yok. Böylece backend de sadece Kadin görünecek. -->
+
+            <br>
+            <label for="Erkek">Erkek</label>
+            <input type="radio" id="Erkek" name="Cinsiyet" value="erkek">
+            <!--name value vermeyince browser da hepsine ayni anda tiklana biliyor.-->
+            <!--Burada backende giden bilgiler sadece name ve value kismi-->
+
+            <label for="Kadin">Kadin</label>
+            <input type="radio" id="Kadin" name="Cinsiyet" value="kadin">
+
+            <label for="None">None</label>
+            <!--label ile inputun iliskilendirilmesi icin for ile id yi ayni yapmamiz gerekiyor.-->
+            <input type="radio" id="None" name="Cinsiyet" value="kadin" checked>
+            <!--checked sayfa acildiginda kadin, erkek veya none dan birini secili olarak gösteriyor-->
+        </div>
+        <br>
+        <br>
+        <div>
+            <label>FAVORI ARABANIZI SECINIZ!</label>
+            <br>
+            <label for="bmw">BMW</label>
+            <input type="checkbox" id="bmw" name="araba1" value="bmw">
+
+            <label for="merco">MERCEDES</label>
+            <input type="checkbox" id="merco" name="araba2" value="mercedes">
+
+            <label for="audi">AUDI</label>
+            <input type="checkbox" id="audi" name="araba3" value="audi">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label for="yas">YAS</label>
+            <input type="number" id="yas" name="yas" value="0" min="18" max="100" step="2">
+            <!--step artis miktari-->
+            <!-- max kisminda yas veya siparis olarak girilebilecek en fazla yas, siparis miktari yazilabilir. 
+            step ise artis miktarini belirliyor.-->
+            <!-- Burada value bos da birakilabilir. Eger 0 yazilirsa sayfada placeholder gibi kutu icerinse default olarak 0 görünecektir.-->
+
+        </div>
+        <br>
+        <div>
+            <label for="renk">RENK</label>
+            <input type="color" id="renk" name="renk" value="">
+        </div>
+        <br>
+        <div>
+            <label for="">TARIH</label>
+            <input type="date" id="TARIH" name="tarih" min="2000-01-01" max="2023-01-01">
+        </div>
+        <br>
+        <div>
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label for="tel">TELEFON</label>
+            <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                placeholder="555-555-55-55">
+        </div>
+        <br>
+        <div>
+            <label for="tatli">Hangi Tatliyi Seversiniz?</label>
+            <select name="tatli" id="tatli">
+                <optgroup label="Serbetli Tatlilar">
+                    <option value="künefe">Künefe</option>
+                    <option value="baklava">Baklava</option>
+                    <option value="kadayif">Kadayif</option>
+                </optgroup>
+                <optgroup label="Sütlü Tatlilar">
+                    <option value="Muhallebi">Muhallebi</option>
+                    <option value="Kazandibi">Kazandibi</option>
+                </optgroup>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="yorum">Yorumlarınızı Giriniz:</label>
+            <br />
+            <textarea name="yorum" id="yorum" cols="10" rows="10" style="resize: none" maxlength="100"
+                placeholder="En fazla 100 karakter girilebilir"></textarea>
+            <!-- style="resize:                              none : Yeniden boyutlandırılabilir özelliğini devre dışı bırakmak için kullanılır.
+       both : Yatayda ve dikeyde yeniden boyutlandırılabilir yapmak için kullanılır. asılarak büyütülebilir
+      horizontal : Yatayda yeniden boyutlandırılabilir yapmak için kullanılır.
+      vertical : Dikeyde yeniden boyutlandırılabilir yapmak için kullanılır. -->
+        </div>
+        <br />
+        <input type="submit" />
+        <input type="reset" />
+        <input type="button" value="KAYDET" />
+        </div>
+    </form>
+</body>
+
+</html>

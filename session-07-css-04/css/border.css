@@ -1,0 +1,49 @@
+.container,
+.container1 {
+    margin: 1rem;
+}
+
+.msg {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.msg1 {
+    border: 3px solid red;
+    border-radius: 20px 20px 20px 20px;
+    /* Kenarlari yuvarlama.*/
+}
+
+.msg2 {
+    border: 4px dashed red;
+    border-radius: 30%;
+    /* Köselerinden 30% lik bir yuvarlama olusuyor. */
+}
+
+.msg3 {
+    border-right: 2px solid green;
+    border-left: 5px solid green;
+}
+
+.msg4 {
+    border: 5px dotted blueviolet;
+    border-radius: ;
+}
+
+.msg5 {
+    border: 2px solid;
+}
+
+.msg6 {
+    border: 2px solid pink;
+}
+
+.msg7 {
+    border: 3px solid gray;
+    border-radius: 50%;
+    padding: 2rem;
+    width: 5rem;
+    /* width ve height ile daire görünümü kazaniyor.*/
+
+    height: 5rem;
+}

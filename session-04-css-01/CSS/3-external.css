@@ -1,0 +1,21 @@
+* {
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    color: blue;
+}
+
+.par {
+    color: aqua;
+}
+
+.center .par { /* div center classinin icerisinde ki .par class'i*/
+    text-align: center;
+    color: blueviolet;
+} 
+
+.ferhat {
+    color: coral;
+}

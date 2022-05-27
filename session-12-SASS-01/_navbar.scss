@@ -1,0 +1,39 @@
+.navbar {
+
+    ul {
+        list-style-type: none;
+        display: flex;
+
+        li {
+            a {
+                text-decoration: none;
+                padding: 5px;
+                color: black;
+
+            }
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #cc6699;
+
+    img {
+        width: 30%;
+    }
+
+    .left {
+        margin: 20px;
+
+        button {
+            border: none;
+            padding: 10px;
+            border-radius: 15px;
+            margin: 10px;
+            background-color:blueviolet;
+        }
+    }
+
+}

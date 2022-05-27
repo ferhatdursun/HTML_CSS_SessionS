@@ -1,0 +1,33 @@
+p {
+    height: 10vh;
+    /* Sayfanin 10% ini kapsiyor her biri.*/
+}
+
+.header1 {
+    background-image: linear-gradient(yellow, green);
+    /* linear-gradient ile iki rengi karistiriyoruz. */
+}
+
+.header2 {
+    background-image: linear-gradient(rgb(240, 219, 27), rgb(115, 228, 23), hsl(225, 40%, 40%));
+    /* iki farkli rengi rgb ile renklerin tonlarini secerek karistirma.*/
+}
+
+.header3 {
+    background-image: linear-gradient(to right, rgb(240, 219, 29), rgb(44, 211, 6), hsl(225, 40%, 40%));
+    /* Soldan sag tarafa dogru renkleri karistirma.*/
+}
+
+.header4 {
+    background-image: linear-gradient(45deg, rgb(240, 219, 29), green, blue);
+    /* 45 derecelik bir egim ile renkleri birbirine karistirma. */
+}
+
+.header5 {
+    background-image: radial-gradient(rgb(240, 219, 29) 20%, rgb(44, 211, 6) 50%, hsl(255, 40%, 40%));
+}
+
+.header6 {
+    background-image: repeating-radial-gradient(yellow, green 10%, blue 15%);
+    /* renklerin sonunda ki yüzdeler su dalgasi görüntüsünü veriyor. */
+}

@@ -1,0 +1,66 @@
+/*body{  Bu sekilde kodlarsak browser kenarlarinda ki default bosluklar kalkar yazilar ekran ile bitisik olur.
+    margin: 0;
+}*/
+
+body {
+    margin: 3%;
+    /* font-size:2em; yazarsak sayfa defaul olarak 16px degil 32px den baslar. ve tüm yazilanlar büyür. */
+}
+
+.dede {
+    background-color: aqua;
+    width: 50%;
+    height: 50vh;
+}
+
+.baba {
+    /* baba class'i dedenin altinda torun da babanin icerisinde bir class. */
+    background-color: red;
+    width: 50%;
+    /* DEDE'nin alaninin yarisini */
+    height: 50%;
+}
+
+.torun {
+    /* Baba'nin alaninin yarisini*/
+    background-color: orange;
+    /*width: 50%;*/
+    width: 50vw;
+    /* Direkt olarak ekranin 50% aliyor. */
+    /* Bu sekilde ki /vw) kullanim tüm pcler de ayni sonucu verir. Yani daha saglikli bir kullanim. En fazla 100 yazilabilir.
+    Eger diger classlarda vw haricinde bir ölcülendirme (%,px) kullanilmissa aradaki farklardan dolayi olusacak sorunlari
+    engellemek body'nin marginlerini 0 yapmamiz gerekiyor.*/
+    /*height: 50vh;*/
+}
+
+/* viewport ölcüleri parenttan bagimsiz calisir(vw=width, vh=height) % ölcü birimi elementin kapsamasi gereken ölcüye göre calisir mesela bir div ne kadar yer kaplayacaksa 50% ile onun yarisini alirsiniz, yada parent a bir height with verdiniz, ona göre sekillenir. px ve %  marginlerden kalan yeri anlar, viewport bütün ekrani(50vw = ekranin yüzde 50 si)  */
+
+.anane {
+    font-size: 3em;
+    /* 1em= 16px. Buradan sonra verilen "em" ölcü birimleri anane baz alinarak yapilir. Yani bir altta kine 2em verirsem 2em(altta ki) * ?(ananeye verilen deger) olur. Annane suanda 2em den dolayi 32 px zaten. 32px * 2em olur. */
+    color: blueviolet;
+}
+
+.anne {
+    font-size: 0.5em;
+    /* 2em * 32px(anane)=64px */
+
+}
+
+.kiz {
+    /* kiz burada bir üstü olan anneye göre sekillendi. Suanda anane ile ayni boyutta. */
+    font-size: 2em;
+    /* EGER KI KIZ digerlerinden etkilensin istemiyorsak ölcü birimini direkt olarak "px" ile verebiliriz. */
+    /* font-size:30px; */
+}
+
+.div1 {
+    font-size: 2rem;
+}
+
+.div2 {
+    font-size: 2rem;
+    /* Rem ölcü birimi em gibi degil. önceki verilen degerlerin bir önemi yok. kac verilirse verilsin *16px olarak calisiyor. */
+    /* Rem ölcü birimi tüm pcler de ayni sekilde görüntülene biliyor.
+    Eger 60px lik bir büyüklük istiyorsak 60/16(1px)= 3.75rem yapar */
+}

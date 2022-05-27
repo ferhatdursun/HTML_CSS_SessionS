@@ -1,0 +1,28 @@
+div.box {
+    font-size: 2rem;
+    background-color: burlywood;
+    border: 15px solid red;
+    padding: 50px;
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+    /*width height vermezsek box'un icerisine birsey yazarsak sürekli olarak büyümeye devam eder.
+    bu sekilde bizim belirledigimiz yükseklik ve genislik icerisine yazilari kücülterek sigdirir. */
+    height: 300px;
+    box-sizing: border-box;
+    /* Kutunun ölcüsü benim verdigim ölcü olsun. icerisine birseyler eklense bile Degismesin.
+    Yazi eger verilen kutu ölcüsünün icerisine sigmiyorsa, yazilar kutunun disina tasar.  */
+}
+
+div.content {
+    font-size: 2rem;
+    background-color: burlywood;
+    border: 15px solid red;
+    padding: 50px;
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+    box-sizing: content-box;
+    /* kutunun icerisine yeni birseyler eklenirse kutunun alani büyümeye devam eder.
+     */
+}

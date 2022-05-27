@@ -1,0 +1,64 @@
+table,
+td,
+th {
+    border-collapse: collapse;
+    /* Tablo icerisinde görünen siyah cizgileri ortadan kaldirmak icin. */
+}
+
+.liste tr:nth-child(odd) {
+    background-color: blueviolet;
+    color: yellowgreen;
+}
+
+.liste td:first-child {
+    font-weight: 900;
+}
+
+.liste td:last-child {
+    font-style: italic;
+}
+
+.liste tr:nth-child(3) {
+    background-color: red;
+}
+
+.liste tr:nth-child(3)::after,
+.liste tr:nth-child(3)::before {
+    content: "😎";
+}
+
+.liste tr::before,
+/* Tüm satirlarin önünü arkasini etkiliyor*/
+.liste tr::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f004";
+    color: violet;
+    font-size: 20px;
+}
+
+td:hover {
+    background-color: lightgreen;
+}
+
+/* Maus ile tablo üzerinde gezerken datalar üzerinde acik yesil bir renk olusturma komutu. */
+
+a:visited {
+    color: orange;
+}
+
+.ikincihref {
+    color: blue;
+}
+
+a:active {
+    color: cyan;
+    /* Maus ile linkin üzerinde tiklayip birakmazsak burada belirtilen renkle gösteriliyor. */
+}
+
+a:hover {
+    font-size: 50px;
+    /*maus ile üstüne gelince linkin kisa yolunu büyütüp farkli bir renkte gösteriyor. */
+    background-color: red;
+}
+

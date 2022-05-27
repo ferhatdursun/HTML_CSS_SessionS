@@ -1,0 +1,78 @@
+.div_2 {
+    background-color: orange;
+    height: 5rem;
+    text-align: center;
+    padding-top: 3rem;
+    word-spacing: 3rem;
+    font-size: xx-large;
+    position: sticky;
+    /* Ekrani asagiya kaydirirken turuncu div'in üst kisimda sabit kalmasi icin. altda ki top ile birlikte.*/
+    top: 0rem;
+}
+
+.a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.a:hover {
+    color: white;
+}
+
+.register {
+    color: whitesmoke;
+    float: right;
+    position: absolute;
+    right: 1rem;
+    padding-right: 2rem;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    /* Kelimenin altinda ki cizgileri kaldirmak icin. */
+    font-size: x-large;
+    /* Kelimeleri büyütmek icin. */
+}
+
+.register:hover {
+    color: black;
+}
+
+.login {
+    color: white;
+    float: right;
+    right: 1rem;
+    padding-top: 1.5rem;
+    padding-right: 8.5rem;
+    text-decoration: none;
+    font-size: x-large;
+    position: absolute;
+}
+
+.login:hover {
+    color: black;
+}
+
+span {
+    padding-right: 0.5rem;
+    font-size: x-large;
+}
+
+.logo_2 {
+    position: fixed;
+    /* position fixed ile asagida verdigim sag, sol, asagi komutlarinda sabitlendi. */
+    float: right;
+    right: 1rem;
+    top: 63rem;
+    color: white;
+    background-color: red;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    /* slack sembolünün boyutunu büyütme kücültme */
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 2rem;
+    /* etrafina yuvarlak görünüm kazandirma.*/
+
+
+}

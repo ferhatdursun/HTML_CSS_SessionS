@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    /* display:grid; izgaralara bölüyor. */
+
+    grid-template-columns: 150px 300px 250px;
+    /* Kutulara dikeyde boyut ölcüsü vermek icin. */
+
+    grid-template-rows: 100px 500px 100px;
+    /* Kutulara yatayda boyut ölcüsü vermek icin. */
+}
+
+.content {
+    border: 1px solid red;
+    /* hepsinin disinda ki kirmizi tablo kenarlarini olusturmak icin. */
+
+    background-color: thistle;
+    text-align: center;
+
+}
+
+.content1 {
+    background-image: url(../image/kleopatra-asisi.jpeg);
+    background-size: cover;
+    background-position: center center;
+    /* Arka plani ortaliyor. Lazim olur! */
+}
+
+.content4 {
+    overflow: auto;
+    /* sagdan ve soldan yukari-asagi oynatma sekmesi geliyor. scroll dersek
+    yazilar fazla oldugu zaman geliyor. */
+}

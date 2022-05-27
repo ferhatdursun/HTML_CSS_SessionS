@@ -1,0 +1,109 @@
+.yazi {
+    text-align: center;
+    width: 30vw;
+    /* bulundugu div'in30% ini kaplasin.*/
+    margin: 2rem auto;
+    font-size: 2rem;
+}
+
+.yazi1 {
+    background-color: aquamarine;
+    transform: rotateX(180deg);
+}
+
+.yazi2 {
+    background-color: yellow;
+    transform: rotateY(180deg);
+}
+
+/*! 90 ve 270 derecelerde yazilar tam dik olduklarindan ve 3- boyutlu olarak bakamadigimiz icin gözükmezler.*/
+
+.yazi3 {
+    background-color: purple;
+    transform: rotate(45deg);
+    /* transform:rotate(-45deg)*/
+}
+
+
+/***********SCALE**********/
+
+.yazi4 {
+    background-color: green;
+}
+
+.yazi4:hover {
+    transform: scaleX(1) scaleY(3.5);
+    /* x eksenin de sag sola uzuyor. y eksenin de yukari asagiya yarisi kadar kücülüyor. */
+}
+
+.yazi5 {
+    background-color: rgb(63, 226, 63);
+}
+
+.yazi5:hover {
+    transform: scale(0.5, 2)
+        /* x ekseninde yarisina kücülsün(0.5) y eksenin de 2 katina ciksin(2)*/
+}
+
+/************TRANSiTiON*************/
+
+.transition {
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    transition: background-color 3s, color 5s, font-size 4s;
+    /* TIKLA'nin üstüne gelindigin de renk ve boyut gecisleri icin süre transition koduyla 
+    TIKLA'nin babasi olan .btn ye yazilmasi gerekiyor. */
+}
+
+/* 3 sn icerisinde background color 5 sn icerisinde de color yavas yavas degisiyor.
+backgrouncolor, color veya font-size gibi degisimesini istedigimiz özellikleri .btn:hover'in altina yazmamiz gerekiyor.*/
+
+.btn:hover {
+    background-color: violet;
+    color: white;
+    font-size: 5rem;
+
+}
+
+
+
+/*************TRANSLATE***************/
+
+
+
+.transform {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(221, 100, 237);
+    color: white;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    /*transition: transform 5s; buraya yazarsak bu class adinda ki tümü icin gecerli olur. */
+}
+
+.x {
+    transition: transform 2s;
+}
+
+.y {
+    transition: transform 5s;
+}
+
+.x:hover {
+    transform: translateX(50px);
+}
+
+.y:hover {
+    transform: translateY(50px);
+}
+
+.xy:hover {
+    transform: translate(50px, -50px);
+}

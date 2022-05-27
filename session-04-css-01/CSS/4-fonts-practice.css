@@ -1,0 +1,18 @@
+* {
+    font-family: 'Macondo', cursive;
+}
+
+.menu {
+    background-color: lightgray;
+    width: 96px;
+    /* Arka planin(gri renk olan alanin) boyutuyla ilgili degisikler yapar. */
+    text-align: center;
+    font-size: 19px;
+}
+
+.aktif {
+    background-color: black;
+    color: white;
+    font-family: 'Oleo Script Swash Caps',cursive;
+    font-style: italic;
+}

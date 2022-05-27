@@ -1,0 +1,39 @@
+* {
+    text-align: center;
+    color: white;
+}
+
+header.banner .bg {
+    height: 20rem;
+    background-size: cover;
+    /* background-size: cover; ekrani kapliyor.*/
+
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-repeat: no-repeat;
+    /*no-repeat; resimin tekrar etmesini engelliyor.*/
+
+    background-position: center center;
+}
+
+.butonlar span {
+    background-color: gray;
+    width: 4rem;
+    height: 1rem;
+    display: inline-block;
+    /* spanlar inline olduklari icin bu komut olmadan sadece icerisinde yazanlar kadar görünüyolar
+    ve suanda icerisinde birsey yazmadigi icin görünmüyolar. Görünmeleri icin bu komut gereklidir. */
+
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.butonlar span:hover {
+    background-color: lightgray;
+}

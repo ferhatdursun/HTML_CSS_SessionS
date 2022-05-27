@@ -1,0 +1,87 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*columns icerisinde ki 4 sütunun kac parcaya bölünecegini belirliyor.*/
+
+    grid-template-rows: repeat(4, 15vh) 15vh 15vh;
+    /* satirin kac esit parcaya bölünecegini (dört) gösteriyor. 
+    son daki parantez disinda olan 15vh tasma olursa onu da 15 vh yap demek.*/
+
+    gap: 10px 5px;
+    /* 10px satirlarin, 5px sütunlarin arasini acmak icin. */
+}
+
+/*.content:nth-child(odd){
+    background-color: pink;
+}*/
+
+.content {
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    /* align.items; y eksenin de ortaliyor.*/
+
+    justify-content: center;
+    /*justify-content#; kutu icerisinde ki kelimeleri X eksenin de ortaliyor.*/
+
+    border: 1px solid gray;
+
+}
+
+.content1 {
+    grid-column-start: 1;
+    /* ilk yazilan dahildir. Son yazilanin -1 i dahildir. */
+    grid-column-end: 3;
+    background-color: pink;
+}
+
+.content4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: orange;
+}
+
+.content6 {
+    grid-column-start: 3;
+    /* Sütunda; 3. sütundan 5.(-1) sütuna kadar al
+     */
+    grid-column-end: 5;
+
+    grid-row-start: 2;
+    /* Yatayda; 2. satirdan 4.(-1) satira kadar.  */
+    grid-row-end: 4;
+    background-color: rgb(205, 118, 205);
+}
+
+/* Alternatif Yol 
+.content6 {
+  grid-area:2 (satir baslangic)/3(sütun baslangic)/
+   span 3 (satirda 3 parca) /span 1 (sütunda 1 parca);
+}  
+grid-area: 2 /   3    /span 2               / span 2;
+        satir/ sütun / 2 tane satirdan al / 2 tane sütundan al.
+*/
+
+
+
+.content9 {
+    grid-row-start: 4;
+    /* Satirda 4 den basla 6. ya(-1) kadar. */
+    grid-row-end: 6;
+
+    grid-column: 2;
+    /*direk olarak bir tane sütun konumu belirtme.*/
+
+    background-color: aqua;
+}
+
+.content10 {
+    grid-area: 4/3/ span 2 / span 2;
+    /* 4. satir ve 3. sütunun kesistigi yerde 2 tane satirdan 2 tane sütundan kutu */
+
+    background-color: rgb(195, 70, 70);
+}
+
+.content12 {
+    grid-column: span 4;
+}

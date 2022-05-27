@@ -1,0 +1,12 @@
+p {
+    height: 10vh;
+}
+.header1{
+    background-image: linear-gradient(yellow,green);
+}
+.header2{
+    background-image: linear-gradient(
+    rgb(240,219,27),
+    rgb(115,228,23),
+    hsl(123,40%,40%));
+}

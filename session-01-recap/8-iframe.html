@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFRAME</title>
+    <link rel="icon" href="./assets/favicion.png">
+</head>
+
+<body>
+
+    <h1>IFRAME</h1>
+    <div>
+        <!-- Müzik ekleme etiketi audio. Controls ise müzik dosyasinin browser üzerinde görünmesi icin gerekli.-->
+        <!-- audio da ayni resim dosyalari gibi. Bundan dolayi boyutunu ayarlayabiliriz.-->
+        <audio controls src="./assets/muzik.mp3" style="background-color: 
+        blueviolet; width: 80%"></audio>
+    </div>
+    <br>
+
+    <div>
+        <video controls src="./assets/Su.mp4" style="width: 50%;"></video>
+        <!-- Video ekleme etiketi. Burada da audio da oldugu controls eklenmesi gerekiyor. 
+        Aksi halde videonun baslatma butonu gelmiyor. autoplay eklenirse video veya mp3 sayfa yükenir yüklenmez 
+        direkt olarak calismaya basliyor.-->
+    </div>
+    <br>
+    <br>
+
+    <div>
+        <!-- iframe ile Youtube üzerinden video ekleme: Burada ki alt satiri komple youtubeden videonun
+        altinda ki paylas butonunun altindan <> yerlestir, simgesini kopyalayarak oldugu gibi buraya yapistirman gerekiyor.
+        iframe'nin sonun da bulunan allowfullscreen ise videoyu browser üzerinden izlerken tam ekran olarak izleyebilmeyi sagliyor.
+        frameborder="0" olursa videonun etrafinda herhangi bir border(cerceve) olusturmuyor. 1, 2, usw. olmasi durumunda bir cerceve olusuyor.
+        accelermeter; videonun icerisinde hiz ayari butonunun olmasina yariyor.-->
+        <!-- Youtubeden alinan video linkinin sonuna ?autoplay=1&mute=1 eklenirse video sayfa yüklenir yüklenmez direk acilir.-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KbfNzC9VGok?autoplay=1&mute=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            style="height: 50%; width: 50%;"></iframe>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://www.clarusway.com/" frameborder="1" width="500px" height="400"></iframe>
+        <!-- Baska bir siteyi kendi sitemiz icerisine gömme, gösterme.-->
+
+    </div>
+</body>
+
+</html>

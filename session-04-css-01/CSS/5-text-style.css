@@ -1,0 +1,43 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    /*todo color: rgb(193,27,151); 193, 27, 151 her biri ayri bir rengin kodu. rgb ile bunlari karistiriyoruz. Bunlarin sonuna 0 dan 1'e kadar girecegim degerler ile rengin tonunu acabilirim.(Netflix ödevi)
+    text-decoration: underline; */
+    /* HLS code codepen sayfasindan istedigimiz tonda rengin rgb veya hls kodunu ögrenebiliriz. */
+    text-decoration: blue underline overline wavy 8px;
+    /*! decoration: lin-through; yazinin altini üstünü cizmek icin  */
+    /*! text-transform: capitalize; ile cümlenin bas harfini büyütebilirim.*/
+}
+
+p {
+    text-indent: 20px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+
+li {
+    background-color: green;
+}
+
+.tatli {
+    list-style-position: inside;
+    /* <ul> ile birseyler olusturduktan sonra her maddenin(paragrafin) basinda bir nokta olusur. Bu nokta ile paragrafinda basinda ki harfin arasini acmak icin inside kullaniliyor */
+
+    list-style-type: "👩‍🦳";
+    /* <ul> ile alt alta basliklar olusturduktan sonra onlarin basinda ki nokta simgesini bu sarisin kizla bu kod sayesin de degistirebiliriz. */
+
+    list-style-image: url(../img/arrow-right-long-solid.svg);
+    /* <ul> olusturulan maddelerin basinda ki simgeleri bu sekilde herhangi bir resimle degistirebiliriz. */
+}
+
+h3 {
+    /* text-align:end; cümleyi sayfanin sagina aliyor ve sol basta ki kelimeleri sag tarafa aliyor. */
+
+    direction: rtl;
+    /* Sagdan sola dogru yazdir. ltr yaparsak soldan saga dogru yazdiriyor. */
+}
+
+/*!pseudo classlar önemli*/

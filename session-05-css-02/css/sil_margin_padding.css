@@ -1,0 +1,31 @@
+.btn {
+    background-color: beige;
+    margin: 1rem;
+}
+
+.btn:last-child {
+    /* Contact ile BTN yazilari arasinda ki mesafeyi aciyor.*/
+    margin-bottom: 3rem;
+}
+
+.span-btn {
+    background-color: burlywood;
+    padding: 1rem;
+    /* inline elementlere margin-padding veremiyorum.
+    padding etrafindakilerin üstüne cikiyor.
+    margin ise alt ve üste islemiyor.*/
+
+}
+
+.new-btn {
+    background-color: red;
+    margin: 2rem auto;
+    /* margin 2rem; alttan üstten 2rem bosluk ver. Auto ise; sagdan soldan ortala demek.*/
+
+    padding: 2rem 1rem;
+    width: 20vw;
+    /*margin:auto; bulundugu yerde sayfanin ortasinda konumlandiriyor.
+    width:20vw sayfanin 20% lik kismini kapsa demek.*/
+    text-align: center;
+    /* Bu sekilde button icerisinde ki Person kelimesini button icerisinde ortalamis olduk. */
+}
